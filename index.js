@@ -1,2 +1,9 @@
-const _ = require('lodash');
-module.exports = object => _.mapKeys(object, (value, key) => key.toUpperCase());
+
+
+module.exports = object => {
+  return Object.keys(object).reduce((result, key) => {
+    result[key.toUpperCase()] = object[key];
+    return result;
+  }, {});
+};
+

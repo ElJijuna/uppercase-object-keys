@@ -1,21 +1,40 @@
 {
   "name": "uppercase-object-keys",
-  "version": "1.0.4",
-  "description": "Transformar claves de un objeto a mayusculas",
+  "version": "1.0.5",
+  "description": "Transforma las claves de un objeto a mayúsculas / Transforms object keys to uppercase",
   "main": "index.js",
+  "exports": {
+    ".": {
+      "require": "./index.js",
+      "import": "./index.js"
+    }
+  },
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ElJijuna/uppercase-object-keys.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ElJijuna/uppercase-object-keys/issues"
+  },
+  "homepage": "https://github.com/ElJijuna/uppercase-object-keys#readme",
   "scripts": {
     "test": "jasmine --config=jasmine.json"
   },
   "keywords": [
     "uppercase",
     "object",
-    "keys"
+    "keys",
+    "transform",
+    "utility"
   ],
   "author": "@pilmee",
   "license": "MIT",
-  "dependencies": {
-    "lodash": "^4.17.10"
-  },
+  "dependencies": {},
   "devDependencies": {
     "jasmine": "^3.2.0"
   }
